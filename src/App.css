@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-}
-
+  background: rgb(104,195,121);
+  background: linear-gradient(0deg, rgba(104,195,121,1) 18%, rgba(71,103,80,1) 100%);}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +35,77 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.foregrounds {
+
+  max-width: 100%;
+  height: auto;
+
+}
+
+.backgrounds{
+
+  max-width: 100%;
+  height: 50%;
+
+
+}
+
+
+
+* {
+  user-select: none;
+}
+
+img {
+  position: auto;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+#red-queen_and_alice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  width: 80%;
+  max-width: 450px; /*height: 783px / 2*/
+  z-index: 1;
+}
+
+#red-queen_and_alice:before {
+  content: " ";
+  display: block;
+  padding-top: 87%;
+}
+
+#red-queen_and_alice img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.earth {
+
+
+  background-color: rgb(225,169,95);
+  background-size: 40%;
+  background-position: bottom;
+  background-repeat: repeat;
+  
 }
